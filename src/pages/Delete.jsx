@@ -8,7 +8,7 @@ function Delete() {
     e.preventDefault();
 
     axios
-      .delete(`http://localhost:8080/delete/${id}`)
+      .delete(`http://localhost:8080/student/delete/${id}`)
       .then(() => alert("Student Deleted Successfully"))
       .catch((err) => console.error(err));
   };

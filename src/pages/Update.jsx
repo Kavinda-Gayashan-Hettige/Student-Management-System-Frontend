@@ -17,7 +17,7 @@ function Update() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:8080/update/${id}`, student)
+    axios.put(`http://localhost:8080/student/update/${id}`, student)
 .then(() => alert("Student updated"))
 .catch(err => console.error(err));
 };

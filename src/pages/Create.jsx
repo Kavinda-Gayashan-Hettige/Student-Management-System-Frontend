@@ -16,7 +16,7 @@ function Create() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8080/add", student)
+    axios.post("http://localhost:8080/student/add", student)
 .then(() => alert("Student added successfully"))
 .catch(err => console.error(err));
 };
